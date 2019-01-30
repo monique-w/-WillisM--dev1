@@ -1,0 +1,150 @@
+
+
+ .contact-us {
+     grid-area: button;
+    background-color: #FF4850;
+    color: white;
+    font-family: "Fira Sans";
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 15px;
+    padding: 10px 16px;
+ }
+
+ .find-out-how {
+    grid-area: button;
+    background-color: #FF4850;
+    color: white;
+    font-family: Fira Sans;
+    font-weight: 400;
+    font-size: 12px;
+    border-radius: 4px;
+    padding: 10px 44px;
+ }
+ 
+
+}
+
+
+
+ .logo {
+     grid-area: logo;
+     font-family: Fira Sans;
+     font-weight: 400;
+ }
+
+ .nav {
+     grid-area: nav;
+     color: #88898B;
+     font-weight: 400;
+}
+
+ 
+.header {
+    
+        display: flex;
+        flex-direction: column;
+    
+}
+
+button, .contact-us {
+    width: 100%;
+}
+
+ li {
+     list-style: none;
+     margin-right: 40px;
+ }
+
+ul {
+    display: inline;
+    flex-direction: column;
+    font-family: Fira Sans;
+}
+
+a {
+    text-decoration: none;
+    color: #88898B;
+}
+
+a:hover {
+    color: #FF4850;
+}
+
+.adopt {
+    font-weight: 300;
+    font-family: Fira Sans;
+}
+
+ .Me {
+    color: #FF4850;
+    font-weight: 400;
+    font-family: Fira Sans;
+ }
+
+ .adopting {
+     color: #FF4850;
+ }
+
+ }
+
+ .main {
+    grid-area: main;
+    font-weight: 600;
+    Font-family: Fira Sans;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 50px;
+ }
+.main2 {
+    grid-area: main2;
+    font-family: Fira Sans;
+    color: #88898B;
+    font-weight: light;
+}
+
+button:hover {
+    background-color: #ccc;
+}
+
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: #F0ECEE;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        background-image: url("bulldog.jpg");
+        background-size: cover;
+        background-repeat:no-repeat;
+    }
+
+    .container {
+        display: grid;
+        grid-template-areas: 
+               'header header'
+               'main main'
+               'main main'
+               'main2 main2';
+    }
+
+    ul {
+        display: grid;
+        grid-template-areas: 
+               'li li li li button';
+       font-family: Fira Sans
+    }
+
+    .header {
+        grid-area: header;
+        display: grid;
+        grid-template-areas: 
+               'logo nav nav nav nav nav';
+    }
+
+    button {
+        width: auto;
+    }
+}
